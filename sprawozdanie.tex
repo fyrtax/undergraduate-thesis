@@ -1,0 +1,47 @@
+\documentclass{sprawozdanie-agh}
+
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+%\usepackage{utopia} % sans serif
+%\usepackage{lmodern} % serif
+%\renewcommand{\familydefault}{\sfdefault} % serif
+
+\makeatletter
+
+\begin{document}
+
+\przedmiot{Ważny przedmiot\\Grupa 2}
+\tytul{Sprawozdanko}
+\podtytul{Niesamowity temat zadania}
+\kierunek{Informatyka Geoprzestrzenna}
+\rok{Rok 1}
+\autor{Janko Muzykant}
+%\miasto{Kraków}
+%\data{\today}
+
+\stronatytulowa{}
+\spistresci{}
+
+\section{Wstęp}
+Opis
+\subsection{Podpunkt}
+Wypis
+\subsubsection{Pod podpunkt}
+Odpis
+
+\section{Jakiś punkt}
+Napis
+
+% bibliografia test
+% używa się pliku .bib
+% następnie \cite{} - automatycznie dodaje cytowany dokument do bibliografi
+\LaTeX{} \cite{latex2e} is a set of macros built atop \TeX{} \cite{texbook}.
+test \cite{einstein} and \cite{knuthwebsite}
+
+\bibliographystyle{plain} % We choose the "plain" reference style
+
+\bibliography{refs} % Entries are in the refs.bib file
+% end
+
+\end{document}
