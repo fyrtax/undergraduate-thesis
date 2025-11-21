@@ -14,30 +14,55 @@
 
 \tytul{Implementacja przeglądarki modeli BIM w oparciu o standardy otwarte}
 \podtytul{Implementation of a BIM model viewer based on open standards}
-\kierunek{Informatyka Geoprzestrzenna}
-\autor{Chłopaki}
+\kierunek{Informatyka Geoprzestrzenna} 
+\autor{\textbf{Opiekun pracy: }dr hab. inż. Tomasz Owerko \newline\textbf{Autorzy: }Chłopaki}
 \przedmiot{}
 %\miasto{Kraków}
 %\data{\today}
 
 \stronatytulowa{}
+\newpage
+To poniżej to jakieś brednie, ja się pod tym nie podpisuję (Szymon):
+\url{https://home.agh.edu.pl/~kwant/wordpress/wp-content/uploads/2022/09/Praca_Inzynierska.pdf}
+\url{https://home.agh.edu.pl/~romus/Laboratorium%20Aparatury%20Automatyzacji/Dokumentacja%20techniczna%20i%20oprogramowanie/Cwiczenie%201/SadyDamian%20-Stanowisko%20do%20kontroli%20ci%9Cnienia.pdf}
+Uprzedzony o odpowiedzialności karnej na podstawie art. 115 ust. 1 i 2 ustawy z dnia 4
+lutego 1994 r. o prawie autorskim i prawach pokrewnych (t.j. Dz.U. z 2006 r. Nr 90,
+poz. 631 z późn. zm.): „ Kto przywłaszcza sobie autorstwo albo wprowadza w błąd co
+do autorstwa całości lub części cudzego utworu albo artystycznego wykonania, podlega
+grzywnie, karze ograniczenia wolności albo pozbawienia wolności do lat 3. Tej samej
+karze podlega, kto rozpowszechnia bez podania nazwiska lub pseudonimu twórcy cudzy
+utwór w wersji oryginalnej albo w postaci opracowania, artystyczne wykonanie albo
+publicznie zniekształca taki utwór, artystyczne wykonanie, fonogram, wideogram lub
+nadanie.”, a także uprzedzony o odpowiedzialności dyscyplinarnej na podstawie art. 211
+ust. 1 ustawy z dnia 27 lipca 2005 r. Prawo o szkolnictwie wyższym (t.j. Dz. U. z 2012
+r. poz. 572, z późn. zm.) „Za naruszenie przepisów obowiązujących w uczelni oraz za
+czyny uchybiające godności studenta student ponosi odpowiedzialność dyscyplinarną
+przed komisją dyscyplinarną albo przed sądem koleżeńskim samorządu studenckiego,
+zwanym dalej „sądem koleżeńskim”, oświadczam, że niniejszą pracę dyplomową
+wykonałem(-am) osobiście i samodzielnie i że nie korzystałem(-am) ze źródeł innych
+niż wymienione w pracy
+
+
+\newpage
 \spistresci{}
 
 \section{Wstęp}
 Opinie o całej pracy: 2-3 strony
 
-\section{Wprowadzenie - badanie literaturowe}
 Google scholar
 Science direct
 Podawać zawsze kiedy czytalismy ten artykuł
 od jednej do 2 stron
 
 \begin{itemize}
+    \item BIM digital twin
+    \item 
+    \url{https://www.mdpi.com/2071-1050/15/13/10462} -mam cytaty PK
     \item building smart o ifc
     \item \url{https://repositum.tuwien.at/bitstream/20.500.12708/192611/5/Eichler-2024-BIMcert%20Handbook%20Basic%20Knowledge%20openBIM-vor.pdf}
     \item \url{https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcWall.htm}
     \item science direct
-    \item \url{https://www.sciencedirect.com/science/article/pii/S0926580525001979}
+    \item \url{https://www.sciencedirect.com/science/article/pii/S0926580525001979} - przeczytane mam cytaty PK
     \item \url{https://www.sciencedirect.com/journal/automation-in-construction}
     \item \url {https://www.sciencedirect.com/journal/automation-in-construction}
     \item \url{https://www.sciencedirect.com/science/article/pii/S2467967425000716}
@@ -51,21 +76,113 @@ od jednej do 2 stron
     \item \url{https://github.com/ThatOpen/}
     \item Google scholar
     \item \url{https://ieeexplore.ieee.org/abstract/document/6354353}
-\end{itemize}
+    \item \url{https://xeokit.notion.site/Converting-IFC-Models-to-XKT-using-3rd-Party-Open-Source-Tools-c373e48bc4094ff5b6e5c5700ff580ee}
+\end{itemize} 
+
+\section{Wprowadzenie - badanie literaturowe}
+
+W tym rozdziale opisane zostaną głównie techniki wykorzystywane w projekcie.
+
+\subsection{Definicja i rozwój technologii BIM}
+
+\subsubsection{Historia i koncepcja BIM}
+
+\subsubsection{Bim}
+\subsubsection{Standardy openBIM i building SMART}
+
+\subsection{Cyfrowe Bliźniaki(Digital Twins)}
+\subsubsection{Digital Twins}
+\subsubsection{Wykorzystanie bliźniaków w budownictwie}
+\subsubsection{Przykłady I guess}
+
+\subsection{Standard IFC}
+\subsubsection{Historia IFC}
+\subsubsection{Struktura i semantyka modelu IFC}
+\subsubsection{zalety i wady IFC}
+
+\subsection{Przeglądarki i narzędzia do modeli BIM}
+\subsubsection{That open}
+\subsubsection{Xeokit}
+\subsubsection{Inne open source}
+\subsubsection{Porównanie}
+
+\subsection{Podsumowanie literatury}
+\subsubsection{Wnioski}
+\subsubsection{}
+\subsubsection{}
 
 \section{Podstawy technologiczne}
+
 \begin{itemize}
     \item podstawy informatyczne
+    \
     \item technologia bim 
     \item co to framework
     \item co to react po co wybralismy
     \item jakis schemat semantyczny itd
     \item jak dziala kod
 \end{itemize}
+\subsection{Architektura aplikacji webowej}
+Tutaj drzewko naszej aplikacji
+\subsubsection{Frontend}
+\subsubsection{Backend}
+\subsubsection{Baza datnych}
+\subsubsection{API}
+
+\subsection{Wybór technolgii}
+\subsubsection{React}
+\subsubsection{Vite js}
+\subsubsection{Python}
+\subsubsection{Slinik xeo}
+\subsubsection{}
+
+\subsection{Porównanie ThatOpen vs Xeokit}
+\subsubsection{IFC a XKT}
+\subsubsection{Kompilacja i prędkość otwierania projektów }
+
+\subsection{System kontroli wersji - Git i Github}
+\subsubsection{Stworzenie repo i tworzenie subrepo}
+\subsubsection{Projekt z Backlog}
+\subsubsection{Praca z PR i code review(Git Flow)}
+\subsubsection{Zarzadzanie wersjami i gałęziami}
 
 \section{Metody}
+
 Z czego korzystalismy, co finalnie zadzialalo 
-co nie zadzilaalo dlaczego czegos nie rozwijalismy itd co robilsmy wokol jakich jezykow uzywalismy ale nie pomogly 
+co nie zadzilaalo dlaczego czegos nie rozwijalismy itd co robilsmy wokol jakich jezykow uzywalismy ale nie pomogly
+
+\subsection{Dwie przeglądarki}
+\subsubsection{Przeglądarka ThatOpen}
+\begin{itemize}
+    \item Integracja loadera IFC
+    \item Wydajność
+    \item Ograniczenia biblioteki
+\end{itemize}
+\subsubsection{Przeglądarka Xeokit}
+\begin{itemize}
+    \item Xeo conventer 
+    \item Wydajność
+    \item Ograniczenia 
+\end{itemize}
+
+\subsection{Proces implementacji przegląarki BIM}
+\subsubsection{Tworzenie Frontend}
+\subsubsection{Tworzenie xeokit}
+\subsubsection{Tworzenie API}
+\subsubsection{Tworzenie bazy danych SQL}
+
+\subsection{Dlaczego Xeokit}
+
+
+\subsection{Testy}
+\subsubsection{Testy ładowania modeli}
+\subsubsection{Testy API}
+\subsubsection{Testy interaktywne}
+\subsubsection{}section{Testy wydajnościowe}
+
+\subsection{Projekt i backlog}
+\subsubsection{Tworzenie backlogu}
+\subsubsection{Dokumentacja }
 
 \section{Rezultaty}
 \begin{itemize}
@@ -74,11 +191,27 @@ co nie zadzilaalo dlaczego czegos nie rozwijalismy itd co robilsmy wokol jakich 
     \item troche kodu
 \end{itemize}
 
+\subsection{Działająca przeglądarka BIM}
+\subsubsection{Opisy funkcji modułów itd}
+\subsubsection{Interfejs}
+
+\subsection{Zrzuty ekranu}
+\subsubsection{Strona główna}
+\subsubsection{Edycja modeli}
+\subsubsection{Wyłączanie i właczanie elementów projektu}
+
+\subsection{Fragmenty kodu}
+\subsubsection{API}
+
 \section{Dyskusja}
 \begin{itemize}
     \item koniec - wnioski np. wypunktowanie co robiliśmy korzystalismy z that open ale nie dziala wiec xeokit 
     \item podsumowanie napisane prozą co zrobiliśmy co jest najbardziej udane i np. sugestie co dalej zrobic 
 \end{itemize}
+
+\subsection{Analiza zrealizowanych celów}
+\subsection{Wnioski praktyczne}
+\subsection{Propozycja dalszego rozwoju}
 
 \section{koniec koniec (literatura)}
 literature cytujemy na końcu cytatu numer i numer na literaturze przy żródłach internetowych date kiedy korzystalismy 
