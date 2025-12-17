@@ -57,12 +57,12 @@ od jednej do 2 stron
 \begin{itemize}
     \item BIM digital twin
     \item 
-    \url{https://www.mdpi.com/2071-1050/15/13/10462} -mam cytaty PK
+    \url{https://www.mdpi.com/2071-1050/15/13/10462} -mam cytaty PK stan 18.11.2025
     \item building smart o ifc
-    \item \url{https://repositum.tuwien.at/bitstream/20.500.12708/192611/5/Eichler-2024-BIMcert%20Handbook%20Basic%20Knowledge%20openBIM-vor.pdf}
+    \item \url{https://repositum.tuwien.at/bitstream/20.500.12708/192611/5/Eichler-2024-BIMcert%20Handbook%20Basic%20Knowledge%20openBIM-vor.pdf} stan 27.11.2025
     \item \url{https://standards.buildingsmart.org/IFC/RELEASE/IFC4_3/HTML/lexical/IfcWall.htm}
     \item science direct
-    \item \url{https://www.sciencedirect.com/science/article/pii/S0926580525001979} - przeczytane mam cytaty PK
+    \item \url{https://www.sciencedirect.com/science/article/pii/S0926580525001979} - przeczytane mam cytaty PK stan 25.11.2025 
     \item \url{https://www.sciencedirect.com/journal/automation-in-construction}
     \item \url {https://www.sciencedirect.com/journal/automation-in-construction}
     \item \url{https://www.sciencedirect.com/science/article/pii/S2467967425000716}
@@ -77,27 +77,69 @@ od jednej do 2 stron
     \item Google scholar
     \item \url{https://ieeexplore.ieee.org/abstract/document/6354353}
     \item \url{https://xeokit.notion.site/Converting-IFC-Models-to-XKT-using-3rd-Party-Open-Source-Tools-c373e48bc4094ff5b6e5c5700ff580ee}
+    \item Format XKT
+    \item \url{https://github.com/xeokit/xeokit-sdk/wiki/XKT-Format-V4}
 \end{itemize} 
 
 \section{Wprowadzenie - badanie literaturowe}
 
-W tym rozdziale opisane zostaną głównie techniki wykorzystywane w projekcie.
+W tym rozdziale opisane zostaną głównie zagadnienia i techniki wykorzystywane w projekcie. Zawarte są w nim informację na temat budownictwa cyfrowego wraz z jego zastosowaniami i standardami otwartymi. W dalszej części przedstawione zostaną narzędzia wykorzystywane do wizualizacji oraz edycji modeli cyfrowych za pomocą bibliotek otwartych opierających się na IFC.
 
-\subsection{Definicja i rozwój technologii BIM}
+\subsection{Rozwój technologi i definicja Building Information Modeling}
+Rozwój podejścia do budownictwa znacząco zmienił sposób projektowania i inwentaryzacji obiektów. Ewolucja nastała wraz z cyfryzacją świata, jak i narzędzi do projektowania - od rysowania odręcznego, przez system CAD, aż po współczesne modelowanie informacji o budynku.(coś w tym stylu mówił Pan profesor) - doprowadziła do powstania koncepcji Building Information Modeling (BIM). Technologie te stały się fundamentem współczesnego budownictwa cyfrowego, umożliwiając standaryzację danych, wysoką interoperacyjność i zaawansowaną analizę modeli w całym cyklu życia obiektu.
+
+W kolejnych podrozdziałach przedstawimy genezę BIM, jego podstawowe założenia oraz kluczowe standardy openBIM rozwijane przez organizację buildingSMART, które stanowią istotny element tego projektu.(albo wsm niniejszego)
 
 \subsubsection{Historia i koncepcja BIM}
+“BIM took a remarkably long time to displace its predecessor, initially starting with hand-drafting, computer drafting, computer-aided design (CAD), and other computer-based systems.”
+\newline
+„BIM potrzebował wyjątkowo dużo czasu, aby zastąpić swojego poprzednika, zaczynając od rysunku odręcznego, rysunku komputerowego, systemów CAD i innych komputerowych metod projektowych.”
 
-\subsubsection{Bim}
-\subsubsection{Standardy openBIM i building SMART}
+Pierwsze koncepcje zbliżone do współczesnego BIM pojawiły się już w latach 70 XX wieku. "Chuck Eastman, uznawany za jednego z pionierów BIM, określał te rozwiązania mianem Building Description System." System ten pozwalał na cyfrowe opisywanie obiektów budowlanych z wykorzystaniem danych geometrycznych oraz informacji o ich właściwościach. Jest to element nakładający się z współczesną wizją BIM. „Pierwotnym celem BIM było dostarczanie wykonawcom zarówno wizualnej, jak i ilościowej reprezentacji budowy.”
 
+
+\subsubsection{BIM}
+Building Information Modeling definiuje się jako proces tworzenia i zarządzania informacją o obiekcie budowlanym przy użyciu cyfrowego modelu. W dzisejeszych czasach BIM to nie jedynie model 3D, jest to cały mechanizm zarządzania obiektem budowlanym, w skład którego mogą wchodzić symulacje, w tym systemów alarmujących, procesy eksploatacyjne lub harmonogramowanie. 
+Dzięki IoT możliwe jest łączenie danych z czujników w czasie rzeczywistym ze statycznymi danymi(informacjami) przechowywanymi w modelu. Dzięki czemu organy zajmujące się inwentaryzacją obiektu mogą w znacznie efektywniej identyfikować anomalie i obniżać koszty.
+\subsubsection{Building SMART i Standardy openBIM}
+Populryzacja technologii BIM dała potrzebę ujednolicenia sposobu przechowywania i udostępniania danych modeli między róznymi rozwiązaniami, narzędziami i platformami. Organizacja buildingSMART (International) opracowała zestaw standardów znanych jako openBIM.
+“openBIM is the vendor-independent implementation of BIM based on open standards such as IFC, enabling interoperability between different software products.”
+
+„openBIM to niezależna od dostawcy implementacja BIM oparta na standardach otwartych, takich jak IFC, umożliwiająca interoperacyjność między różnymi produktami oprogramowania.”
+
+“All basic terms for openBIM are explained so that all participants in an openBIM project can use a common language with the same terminology.”
+
+„Wszystkie podstawowe pojęcia openBIM są wyjaśnione tak, aby wszyscy uczestnicy projektu mogli posługiwać się wspólnym językiem i tą samą terminologią.”
+\url{https://www.buildingsmart.org/about/} tu coś można dodać jeszcze 
+
+\subsubsection{Komitet techniczny CEM}
+Znaleść artykuły i napisać o tym 
 \subsection{Cyfrowe Bliźniaki(Digital Twins)}
-\subsubsection{Digital Twins}
-\subsubsection{Wykorzystanie bliźniaków w budownictwie}
-\subsubsection{Przykłady I guess}
+Cyfrowe bliźniaki (Digital Twins, DT) stanowią jedną z technologii rozwijających się w ramach cyfryzacji budownictwa.
+Koncepcja ta umożliwia przejście od tradycyjnych modeli projektowych (statycznych) do tworzenia inteligentnych platform (systemów informacyjnych) działających w czasie rzeczywistym.
+\subsubsection{Zastosowania technologii Digital Twin}
+Termin Digital Twin odnosi się do cyfrowej reprezentacji fizycznego obiektu, która pozostaje z nim w stałym połączeniu informacyjnym. “Digital Twin (DT) is a virtual replica that provides real-time data and analysis of a physical asset to optimize its performance.”
+Cyfrowy bliźniak nie może funkcjonować bez powiązania z modelem BIM – to właśnie BIM dostarcza pełnej, ustrukturyzowanej bazy danych o obiekcie, która może zostać rozszerzona o informacje eksploatacyjne.
+\subsubsection{Wykorzystanie bliźniaków cyfrowych w budownictwie}
 
+
+
+\subsubsection{Wybrane przykłady wdrożeń bliźniaków cyfrowych}
+Wykorzystanie bliźniaków cyfrowych obejmuje szeroki zakres rodzajów obiektów budowlanych i procesów z nimi związanych. Przykładami są:
+\begin{itemize}
+    \item Obiekty użyteczności publicznej
+    \item Cyfrowe bliźniaki w szpitalach
+    \item analiza eksploatacji obiektów budowlanych
+    \item monitorowanie instalacji technicznych(elektrycznych, ogrzewania, wentylacji)
+\end{itemize}
 \subsection{Standard IFC}
+Standard IFC (Industry Foundation Classes) jest otwartym formatem modeli w technologi BIM oraz standardem przyjętym w openBIM.
 \subsubsection{Historia IFC}
+Pierwsza oficjalna wersja standardu IFC pojawiła się w czerwcu 1996 roku jako IFC 1.0 specyfikacja ta zawierała podstawy struktury współczesnych plików. Dużą role w ukierunkowaniu jak uw standard został zbudowany na technologii STEP (Standards for the Exchange of Product Data), dzięki czemu, jak każdy format korzystający z tego standardu ma ułatwione udostępnianie plików pomiędzy programami przez dostarczenie standardowego formatu do pracy nad modelami i projektami 3D. Jest to największy atut IFC jednak pierwsza wersja korzystała również z języka modelowania EXPRESS, co nadało możliwość opisania schematu za pomocą klas, atrybutów, relacji oraz jego struktur hierarchicznych. Biorąc pod uwagę zasadę funkcjonowania ludzkości, człowiek czuję się najlepiej, ponieważ dąży do uporządkowanych sytuacji i modeli.
+Kolejnym dużym krokiem była wersja 2.0 to właśnie w niej pojawiły się wczesne reprezentacje instalacji oraz rozbudowano strukture geometrii, co umożliwiło dokładniejsze modelowanie. Jednak przez wprowadzenie elementów branżowych i rozszerzenie poza samą architekturę standard przestał być uniwersalny i odbiegał od swoich założeń. W roku 2000 wraz z pojawieniem się IFC 2x nastało ujednolicenie i uporządkowanie. Jednym z najważniejszych usprawnień było definiowanie klas i ich relacji oraz podział modelu na widoczne (encje chyba) jednostki przestrzenne, elementy budowlane, zasoby i relacje.
+W kolejnych wydaniach ...
 \subsubsection{Struktura i semantyka modelu IFC}
+Model IFC jest oparty na schemacie danych zgodnym od pierwzzego wydania z normą STEP oraz opisy modeli wyrażone są za pomocą języku EXPRESS w formie hierarchi 
 \subsubsection{zalety i wady IFC}
 
 \subsection{Przeglądarki i narzędzia do modeli BIM}
@@ -122,11 +164,41 @@ pisze tu bo nwm gdzie: napiać że nauczyłem się nie aktualizować bibliotek p
     \item jakis schemat semantyczny itd
     \item jak dziala kod
 \end{itemize}
-\subsection{Architektura aplikacji webowej}
+\subsection{Architektura i technologia aplikacji webowej}
 Tutaj drzewko naszej aplikacji
+\newline
+W niniejszym rozdziale przedstawiono architekturę oraz technologie wykorzystane do implementacji aplikacji opracowanej w ramach projektu inżynierskiego. Opisano ogólną strukturę, zastosowanie warstw wraz z ich funkcjonalnościami oraz sposób komunikacji pomiędzy poszczególnymi komponentami aplikacji.
+
+W kolejnych podrozdziałach omówiono architekturę aplikacji z podziałem na frontend, backend, bazę danych oraz interfejs API. Następnie zaprezentowano uzasadnienie wyboru zastosowanych technologii, takich jak React, Vite.js, język Python oraz silnik xeokit. Pokazano punkt widzenia przy wyborze tych technologi i uzasadniono ich wybór w kontekście wydajności kompatybilności, responsywności, funkcjonalności oraz łatwości rozrzeszania projektu w przyszłości.
+
 \subsubsection{Frontend}
+Do stworzenia warstwy Frontendowej aplikacji została wykorzystana biblioteka React, aktualnie jest to jedna z najczęściej wybieranych stosów technologicznych do realizowania interfejsów wraz z elementami interaktywnymi. 
+
+Usprawnieniem tworzenia aplikacji było wykorzystanie tzw. narzędzia budowania jakim jest Vite.js które za pomocą komend początkowych tworzy gotową aplikacje, którą jest strona tytułowa tego narzędzia. Kluczową przewagą korzystania z tego rowiązania jest zniwelowanie błędu użytkownika przy importowaniu skryptów podczas samodzielnej ingerencji jest to wręcz niemożliwe by dbać o kolejność i kompatybilność wersji.
+
+Frontend aplikacji zawiera komponenty odpowiedzialne m.in. za:
+\begin{itemize}
+    \item wyświetlanie listy projektów
+    \item prezentację danych projektowych
+    \item wizualizacje obsługi przesyłania plików IFC oraz zdjęć 
+    terenowych
+    \item wizualizację modeli BIM przy użyciu silnika xeokit
+\end{itemize}
+
+czy pisac tutaj o komponentach w reacie czemu wybralismy ze style sa modulami itd zeby zmienic styl wystarczy zamienic jeden plik i ze moduly sa nie zalezne przez co sa wygone nie trzeba dawać dodatkowych linijek kodu?
+Komunikacja z backendem>>>
+
 \subsubsection{Backend}
+Backend aplikacji został zaimplementowany w języku Python, który pełni rolę pośrednika pomiędzy frontendem a bazą danych. Część serwerowa odpowiada za przetwarzanie danych, obsługę plików IFC oraz zapisywanie modyfikacji po wykonanej ankiecie?
+
+Backend jest wykorzystywany do:
+\begin{itemize}
+    \item obsługę bazy danych
+    \item operacje na plikach IFC
+\end{itemize}
+
 \subsubsection{Baza datnych}
+Formatem bazy danych wykorzyystywanym do projektu jest sqlite
 \subsubsection{API}
 
 \subsection{Wybór technolgii}
@@ -223,12 +295,13 @@ literature cytujemy na końcu cytatu numer i numer na literaturze przy żródła
     \item duzo smaczkow 
     \item linki do stron roznych naszych profili itd zeby sie chwalic znajomoscia z wszystkim costam o katedrze z ktora robilismy
 \end{itemize}
+\newpage
 
 % bibliografia test
 % używa się pliku .bib
 % następnie \cite{} - automatycznie dodaje cytowany dokument do bibliografi
-\LaTeX{} \cite{latex2e} is a set of macros built atop \TeX{} \cite{texbook}.
-test \cite{einstein} and \cite{knuthwebsite}
+
+Też sprawdzam do naszej pracy \cite{knuth:1984}
 
 \bibliographystyle{plain} % We choose the "plain" reference style
 

@@ -1,6 +1,8 @@
 \ProvidesClass{sprawozdanie-agh} 
 \ProcessOptions\LoadClass[12pt,a4paper,oneside]{article}
-\usepackage[a4paper, top=20mm,right=20mm,bottom=20mm,left=20mm]{geometry}
+%\usepackage[a4paper, top=20mm,right=20mm,bottom=20mm,left=20mm]{geometry}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\linespread{1.5}
 
 % Pakiety
 \RequirePackage[polish]{babel}
